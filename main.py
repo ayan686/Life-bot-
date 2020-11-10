@@ -26,9 +26,9 @@ lifebase = db.life
 number_base = db.number
 pending_base = db.pending
 numbers_base = db.numbers
-white = []#Discord ID For Owner
-black = []#Discord ID2 For Owner
-red = [] #Stock Adder ID
+white = ["660337342032248832"]#Discord ID For Owner
+black = ["660337342032248832"]#Discord ID2 For Owner
+red = ["660337342032248832"] #Stock Adder ID
 def rand():
     ran = random.randint(3,12)
     x = "1234567890"
@@ -318,7 +318,7 @@ async def help(ctx):
     #embed.add_field(name="+invite", value="``To invite bot to your own server!``", inline=False)
     #embed.add_field(name="+support", value="``Offcial Server For Any Kind Help Just Join it!``", inline=False)
     embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740443668472791143/PicsArt_08-05-08.25.39.png?width=406&height=406")
-    embed.set_footer(text="AMIT ROY")
+    embed.set_footer(text="Made by Subrata#3250")
     await channel.send(embed=embed)
 
     
