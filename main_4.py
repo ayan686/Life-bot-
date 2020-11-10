@@ -815,4 +815,4 @@ async def setdiscount(ctx , amount :int=None):
     embed.set_thumbnail(url="https://i.pinimg.com/originals/80/87/9f/80879f09f3bca753e9c1ca1f05a7744d.gif")
     await channel.send(embed=embed)
 
-bot.run('Nzc1MzgwMjA4MTY5MjU0OTQy.X6lfFw.2Bc-zC4pGNU6I0gQ5d2r_istItk')
+bot.run('Nzc1MzgwMjA4MTY5MjU0OTQy.X6lfFw.iKLFkJv2k3GVpsSOiDslkXWtp60')
