@@ -20,15 +20,15 @@ global buycmd
 buycmd = "ON"
 
 client = MongoClient('mongodb+srv://wavehq:Test237@modmail-3ntpq.mongodb.net/test?retryWrites=true&w=majority')
-db = client.get_database("trivia")
+db = client.get_database("trivia_db")
 database = db.user
 lifebase = db.life
 number_base = db.number
 pending_base = db.pending
 numbers_base = db.numbers
-white = [494464437315567636,608461422694891530]#Discord ID For Owner
-black = [702645536758693909,608461422694891530]#Discord ID2 For Owner
-red = [494464437315567636,608461422694891530] #Stock Adder ID
+white = [660337342032248832]#Discord ID For Owner
+black = [660337342032248832]#Discord ID2 For Owner
+red = [660337342032248832] #Stock Adder ID
 def rand():
     ran = random.randint(3,12)
     x = "1234567890"
@@ -57,7 +57,7 @@ bot.remove_command('help')
 @bot.event
 async def on_ready():
     print("started")
-    ch = bot.get_channel(766886069643640833)#Your Channel ID Here
+    ch = bot.get_channel(775599337392308234)#Your Channel ID Here
     await bot.change_presence(activity=discord.Game(name='with Trivia Lives| -help for info'))
     await ch.send("**__Bot Restarted with Upgrades!__** :smirk_cat:")
 
@@ -67,7 +67,7 @@ async def dm(ctx):
 @commands.dm_only()
 @bot.command()
 async def lifes(ctx, refname, amount=1):
-    logchannel = bot.get_channel(766886069643640833)
+    logchannel = bot.get_channel(775599657677619221)
     user_in_list = True
     commander_id = ctx.message.author.id
     num_list = []
@@ -133,7 +133,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.PrivateMessageOnly):
         embed=discord.Embed(title="Direct Messages Only!", description="Be aware! People may have entered this server to look for usernames in order to abuse. For the security of your account, please use that command in direct message only!", color=0xff0000)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/637847068773449738/740370322754240562/IMG-20200805-WA0004.jpg")
-        embed.set_footer(text="AMIT ROY")
+        embed.set_footer(text="Subrata#3297")
         await ctx.send(embed=embed)
                 
 @bot.command()
@@ -144,7 +144,7 @@ async def stocks(ctx):
         embed=discord.Embed(title="***Backup Stock***", description="", color=0x00ff00)
         embed.add_field(name="** HQ Trivia **", value=f"**• Lives: Wait Few Hours...**", inline=False)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740462311101169766/PicsArt_08-05-08.04.41.png")
-        embed.set_footer(text="AMIT ROY")
+        embed.set_footer(text="Subrata#3297")
         await ctx.send(embed=embed)
         return
     num_list = []
@@ -156,7 +156,7 @@ async def stocks(ctx):
         embed=discord.Embed(title="***Backup Stock***", description="", color=0x00ff00)
         embed.add_field(name="** HQ Trivia **", value=f"**• Lives: {stock}!**", inline=False)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740462311101169766/PicsArt_08-05-08.04.41.png")
-        embed.set_footer(text="AMI ROY")
+        embed.set_footer(text="Subrata#3297")
         #await ctx.send('<@{}> **Total stock: {}**'.format(stock))
         await ctx.send(embed=embed)
 
@@ -214,7 +214,7 @@ async def on_command_error(ctx, error):
 
 @bot.command(pass_context=True, aliases=['add'])
 async def add_point(ctx, amount:int):
-    addchannel = bot.get_channel(766886069643640833)
+    addchannel = bot.get_channel(775600111002058782)
     commander_id = ctx.message.author.id
     user_id = ctx.message.mentions[0].id
     if commander_id in white:
@@ -489,7 +489,7 @@ async def stock(ctx):
         embed=discord.Embed(title="***Total Stock***", description="", color=0x00ff00)
         embed.add_field(name="** HQ Trivia **", value=f"**• Lives: Stock Refilling...**", inline=False)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740462311101169766/PicsArt_08-05-08.04.41.png")
-        embed.set_footer(text="AMI ROY")
+        embed.set_footer(text="Subrata#3297")
         await ctx.send(embed=embed)
         return
     num_list = []
@@ -501,7 +501,7 @@ async def stock(ctx):
         embed=discord.Embed(title="***Total Stock***", description="", color=0x00ff00)
         embed.add_field(name="**HQ Trivia **", value=f"**• Lives: {stock}!**", inline=False)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740462311101169766/PicsArt_08-05-08.04.41.png")
-        embed.set_footer(text="AMI ROY")
+        embed.set_footer(text="Subrata#3297")
         #await ctx.send('<@{}> **Total stock: {}**'.format(stock))
         await ctx.send(embed=embed)
 
@@ -510,7 +510,7 @@ async def stock(ctx):
 @bot.command()
 async def life(ctx, refname, amount=1):
  # if ctx.message.channel.is_private:
-    logchannel = bot.get_channel(766886069643640833)
+    logchannel = bot.get_channel(775600800088981525)
     user_in_list = True
     commander_id = ctx.message.author.id
     num_list = []
@@ -583,12 +583,12 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.PrivateMessageOnly):
         embed=discord.Embed(title="Direct Messages Only!", description="Be aware! People may have entered this server to look for usernames in order to abuse. For the security of your account, please use that command in direct message only!", color=0xff0000)
         embed.set_thumbnail(url="https://media.discordapp.net/attachments/637847068773449738/740370322754240562/IMG-20200805-WA0004.jpg")
-        embed.set_footer(text="AMIT ROY")
+        embed.set_footer(text="Subrata#3297")
         await ctx.send(embed=embed)
 
 @bot.command(pass_context=True, aliases=['give'])
 async def give_point(ctx, amount:int , user: discord.Member):
-    givelog = bot.get_channel(766886069643640833)
+    givelog = bot.get_channel(775600800088981525)
     user_in_list = True
     commander_id = ctx.message.author.id
     user_id = user.id
@@ -661,7 +661,7 @@ async def check(ctx , user: discord.Member):
                 em.add_field(name="Points" , value=f"{spec_user_point}" , inline=False)
                 em.set_thumbnail(url=user.avatar_url)
                 em.set_footer(text=f"Requested By :- {userName} ")
-                await ctx.send(embed = em)
+                await ctx.send(embed = embed)
     else:
         async with ctx.typing():
             await ctx.send('<@{}> **have ``No Points Left``'.format(commander_id))
@@ -756,7 +756,7 @@ async def buy(ctx):
         waitmessage = await ctx.author.send("**Creating your payment..**.")
         await asyncio.sleep(2)
         await waitmessage.edit(content='**Please wait...**')
-        ch = bot.get_channel(766886069643640833)
+        ch = bot.get_channel(775598073875267625)
 
         await ch.send("Created payment for Buyer: <@{}> ({}#{}, {})\n Payment Amount :  ₹{} \n Points: {} \n Number: {} \n discount: {}%".format(ctx.message.author.id, ctx.message.author.name, ctx.message.author.discriminator, ctx.message.author.id, price, amount, str(lastdigit2), dis))
         await ch.send("Copy paste the below message when payment is confirmed!")
