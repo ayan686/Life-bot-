@@ -318,7 +318,7 @@ async def help(ctx):
     #embed.add_field(name="+invite", value="``To invite bot to your own server!``", inline=False)
     #embed.add_field(name="+support", value="``Offcial Server For Any Kind Help Just Join it!``", inline=False)
     embed.set_thumbnail(url="https://media.discordapp.net/attachments/641267482778140715/740443668472791143/PicsArt_08-05-08.25.39.png?width=406&height=406")
-    embed.set_footer(text="AMIT ROY")
+    embed.set_footer(text="Subrata#3297")
     await channel.send(embed=embed)
 
     
@@ -565,7 +565,7 @@ async def life(ctx, refname, amount=1):
                 await logchannel.send(content="<@{}> **Life generated `{}` of `{}` for {}**".format(commander_id, gen, amount, refname))
                 embed= discord.Embed(title=f"**Life generated `{gen}` of `{amount}`**",color=0x9999ff)
                 embed.add_field(name=f"**HQ Life Generated For** ``{refname}``" , value=f"**You Have {new_amount}'s Left**" , inline=False)
-                embed.set_footer(text="AMI ROY")
+                embed.set_footer(text="Subrata#3297")
                 embed.set_thumbnail(url="https://deifoexkvnt11.cloudfront.net/assets/article/2020/02/17/1200x630wa-feature_feature.png")
                 pre = await ctx.send(embed=embed)
                 #old_message = await ctx.send('<@{}> **Life generated `{}` of `{}`**'.format(commander_id, gen, amount))
@@ -573,7 +573,7 @@ async def life(ctx, refname, amount=1):
             elif gen > 1:
                 embed= discord.Embed(title=f"**Life generated `{gen}` of `{amount}`**",color=0x9999ff)
                 embed.add_field(name=f"**HQ Life Generated For** ``{refname}``" , value=f"**You Have {new_amount}'s Left**" , inline=False)
-                embed.set_footer(text="AMI ROY")
+                embed.set_footer(text="Subrata#3297")
                 embed.set_thumbnail(url="https://deifoexkvnt11.cloudfront.net/assets/article/2020/02/17/1200x630wa-feature_feature.png")
                 await pre.edit(embed=embed,delete_after=5)
                 await logchannel.send(content="<@{}> **Life generated `{}` of `{}` for {}**".format(commander_id, gen, amount, refname))
@@ -815,4 +815,4 @@ async def setdiscount(ctx , amount :int=None):
     embed.set_thumbnail(url="https://i.pinimg.com/originals/80/87/9f/80879f09f3bca753e9c1ca1f05a7744d.gif")
     await channel.send(embed=embed)
 
-bot.run('NzY2NjIxNTExNTQwMTQ2MTg2.X4mB6w.XWECku9MX66fEho6G-mowXPiwNA')
+bot.run('Nzc1MzgwMjA4MTY5MjU0OTQy.X6lfFw.2Bc-zC4pGNU6I0gQ5d2r_istItk')
